@@ -1,0 +1,256 @@
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.brand-text {
+  background: linear-gradient(90deg, #818cf8, #c4b5fd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.nav-link {
+  padding: 0.55rem 0.8rem;
+  border-radius: 0.65rem;
+  color: #cbd5e1;
+}
+
+.nav-link:hover {
+  background: #1e293b;
+  color: white;
+}
+
+.hero-card {
+  background:
+    radial-gradient(circle at top right, rgba(99, 102, 241, 0.25), transparent 42%),
+    linear-gradient(135deg, #111827, #0f172a);
+  border: 1px solid #334155;
+}
+
+.panel {
+  padding: 1.5rem;
+  border: 1px solid #334155;
+  background: #111827;
+  border-radius: 1.25rem;
+}
+
+.section-title {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #a5b4fc;
+  margin-bottom: 0.35rem;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  padding: 0.7rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  transition: transform 0.15s, background 0.15s;
+}
+
+.primary-btn {
+  background: #4f46e5;
+  color: white;
+}
+
+.primary-btn:hover {
+  background: #6366f1;
+  transform: translateY(-1px);
+}
+
+.secondary-btn {
+  border: 1px solid #475569;
+  background: #1e293b;
+  color: #e2e8f0;
+}
+
+.secondary-btn:hover {
+  background: #334155;
+}
+
+.level-card {
+  border: 1px solid #334155;
+  background: #111827;
+  border-radius: 1rem;
+  padding: 1.1rem;
+}
+
+.level-card p {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  margin-top: 0.45rem;
+}
+
+.stat {
+  padding: 1rem;
+  border: 1px solid #334155;
+  background: #0f172a;
+  border-radius: 1rem;
+}
+
+.stat span {
+  display: block;
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.stat strong {
+  display: block;
+  font-size: 1.7rem;
+  margin-top: 0.25rem;
+}
+
+.prompt-box,
+.template-box {
+  font-family: 'Fira Code', monospace;
+  letter-spacing: normal;
+  word-spacing: normal;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.8;
+  background: #020617;
+  border: 1px solid #334155;
+  border-radius: 0.9rem;
+  padding: 1rem;
+  color: #e2e8f0;
+}
+
+.field {
+  background: #020617;
+  color: #f8fafc;
+  border: 1px solid #475569;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  outline: none;
+}
+
+.field:focus {
+  border-color: #818cf8;
+  box-shadow: 0 0 0 2px #818cf133;
+}
+
+.field:disabled {
+  opacity: 0.55;
+}
+
+.template-box {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+.option-btn {
+  text-align: left;
+  border: 1px solid #475569;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.option-btn:hover {
+  border-color: #818cf8;
+}
+
+.option-btn.selected {
+  border-color: #818cf8;
+  background: #312e81;
+}
+
+.option-btn.correct {
+  border-color: #34d399;
+}
+
+.option-btn.incorrect {
+  border-color: #fb7185;
+}
+
+.light-mode {
+  color-scheme: light;
+  background: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+.light-mode .panel,
+.light-mode .level-card {
+  background: white;
+  border-color: #cbd5e1;
+}
+
+.light-mode .hero-card {
+  background: linear-gradient(135deg, #eef2ff, #f5f3ff);
+  color: #0f172a;
+}
+
+.light-mode .hero-card p {
+  color: #475569;
+}
+
+.light-mode .stat {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+.light-mode .stat span {
+  color: #475569;
+}
+
+.light-mode .field,
+.light-mode .prompt-box,
+.light-mode .template-box,
+.light-mode .option-btn {
+  background: white;
+  color: #0f172a;
+  border-color: #cbd5e1;
+}
+
+.light-mode .nav-link {
+  color: #334155;
+}
+
+.light-mode .secondary-btn {
+  background: #e2e8f0;
+  color: #0f172a;
+  border-color: #cbd5e1;
+}
+
+.light-mode .level-card p {
+  color: #475569;
+}
+
+@media (max-width: 640px) {
+  .panel {
+    padding: 1rem;
+  }
+
+  .nav-link {
+    font-size: 0.8rem;
+    padding: 0.45rem 0.55rem;
+  }
+}
